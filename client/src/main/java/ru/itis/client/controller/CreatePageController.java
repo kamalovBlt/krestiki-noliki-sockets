@@ -27,6 +27,8 @@ public class CreatePageController {
             Message message = MessageHandler.read(Client.getInstance().getSocket());
             if (message != null && message.getType().equals("CL S")) {
                 String lobbyId = message.getContent();
+                Client.getInstance().setCurrentGameId(Integer.parseInt(lobbyId));
+                Client.getInstance().setCurrentGameRole(1);
                 Platform.runLater(() -> this.lobbyId.setText(lobbyId));
             }
             new Thread(() -> {

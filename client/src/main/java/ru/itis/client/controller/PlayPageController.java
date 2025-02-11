@@ -18,6 +18,7 @@ public class PlayPageController {
 
     @FXML
     private StackPane rootPane;
+
     @FXML
     private Text error;
 
@@ -40,6 +41,8 @@ public class PlayPageController {
                 Message read;
                 while ((read = MessageHandler.read(Client.getInstance().getSocket())) != null) {
                     if (read.getType().equals("SG S")) {
+                        Client.getInstance().setCurrentGameId(id);
+                        Client.getInstance().setCurrentGameRole(2);
                         Platform.runLater(() -> {
                             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/game.fxml"));
                             try {

@@ -40,4 +40,7 @@ public class GameLobbies {
         return lobbies.get(id);
     }
 
+    public void remove(int lobbyId) {
+        lobbies.remove(lobbyId);
+    }
 }

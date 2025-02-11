@@ -9,6 +9,8 @@ public class Client {
 
     private final static String HOST = "localhost";
     private final static int PORT = 22222;
+    private int currentGameId;
+    private int currentGameRole;
 
     private final Socket socket;
 
@@ -37,5 +39,19 @@ public class Client {
         return instance;
     }
 
+    public int getCurrentGameId() {
+        return currentGameId;
+    }
 
+    public int getCurrentGameRole() {
+        return currentGameRole;
+    }
+
+    public void setCurrentGameRole(int currentGameRole) {
+        this.currentGameRole = currentGameRole;
+    }
+
+    public void setCurrentGameId(int currentGameId) {
+        this.currentGameId = currentGameId;
+    }
 }
