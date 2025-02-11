@@ -1,0 +1,17 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<StackPane xmlns="http://javafx.com/javafx/8"
+           fx:id="rootPane"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ru.itis.client.controller.CreatePageController"
+           stylesheets="@../css/styles.css"
+           styleClass="root">
+
+    <VBox alignment="CENTER" spacing="10">
+        <Text fx:id="lobbyId"/>
+        <Text text="Ждем подключения пользователя"/>
+    </VBox>
+
+</StackPane>

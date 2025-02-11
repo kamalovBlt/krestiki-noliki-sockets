@@ -1,0 +1,20 @@
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<StackPane xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ru.itis.client.controller.PlayPageController"
+           fx:id="rootPane"
+           stylesheets="@../css/styles.css"
+           styleClass="root">
+
+    <VBox alignment="CENTER" spacing="10">
+        <TextField fx:id="idField"/>
+        <Button onAction="#handleJoinButtonClick" text="JOIN"/>
+        <Text fx:id="error"/>
+    </VBox>
+
+</StackPane>

@@ -1,0 +1,15 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="ru.itis.client.controller.MainPageController"
+           stylesheets="@../css/styles.css"
+           styleClass="root">
+
+    <VBox alignment="CENTER" spacing="10">
+        <Button onAction="#handleJoinButtonClick" text="PLAY"/>
+        <Button onAction="#handleCreateButtonClick" text="CREATE"/>
+    </VBox>
+
+</StackPane>
